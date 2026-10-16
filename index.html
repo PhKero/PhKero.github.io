@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kerollos Magdy · Presentation & Multimedia Designer</title>
+<meta name="description" content="Kerollos Magdy Megalaa: Senior Presentation & Multimedia Designer and licensed pharmacist. Medical and pharma presentations, detail aids, SCORM eLearning, motion and AI-assisted visuals.">
+<meta property="og:title" content="Kerollos Magdy · Presentation & Multimedia Designer">
+<meta property="og:description" content="Medical & pharma presentations, detail aids, SCORM eLearning, motion and AI-assisted visuals.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2300C853'/><text x='32' y='44' font-size='32' font-family='Arial' font-weight='700' text-anchor='middle' fill='%230b0b0b'>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g:#00C853; --g2:#1ED760; --bg:#0b0b0b; --side:#000; --card:#181818; --card2:#232323; --line:#2a2a2a;
+  --tx:#fff; --mut:#a7a7a7; --r:14px; --sideW:260px; --barH:76px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{font-family:'Montserrat',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--g);outline-offset:3px;border-radius:6px}
+
+/* ---------- sidebar ---------- */
+.side{position:fixed;inset:0 auto var(--barH) 0;width:var(--sideW);background:var(--side);padding:22px 14px;display:flex;flex-direction:column;gap:18px;z-index:20}
+.brand{display:flex;align-items:center;gap:10px;padding:4px 10px}
+.brand .logo{width:34px;height:34px;border-radius:9px;background:var(--g);color:#0b0b0b;display:grid;place-items:center;font-weight:800}
+.brand b{font-size:15px;line-height:1.1}.brand small{display:block;color:var(--mut);font-size:11px;font-weight:500}
+.nav{display:flex;flex-direction:column;gap:2px}
+.nav a{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;color:var(--mut);font-weight:600;font-size:14px;transition:.2s}
+.nav a svg{width:20px;height:20px;flex:none}
+.nav a:hover{color:#fff;background:#121212}
+.nav a.on{color:var(--g);background:#121212}
+.side .lib{background:#121212;border-radius:12px;padding:14px 12px;flex:1;overflow:auto}
+.lib h6{font-size:12px;color:var(--mut);letter-spacing:1.2px;text-transform:uppercase;margin:0 0 10px 4px}
+.cvbtn{display:flex;justify-content:center;align-items:center;gap:8px;background:var(--g);color:#0b0b0b;font-weight:800;border-radius:999px;padding:11px;font-size:13px;transition:.2s}
+.cvbtn:hover{transform:scale(1.03);background:var(--g2)}
+
+/* ---------- main ---------- */
+main{margin-left:var(--sideW);padding:0 0 calc(var(--barH) + 40px)}
+section{padding:46px clamp(18px,4vw,56px)}
+.hero{position:relative;min-height:92vh;display:grid;grid-template-columns:1.25fr .9fr;align-items:center;gap:30px;padding-top:60px;overflow:hidden;
+  background:radial-gradient(1200px 600px at 10% -10%,rgba(0,200,83,.35),transparent 60%),linear-gradient(180deg,#123b22 0%,var(--bg) 70%)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#d9ffe6;font-weight:700}
+.eq{display:inline-flex;gap:3px;align-items:flex-end;height:14px}
+.eq i{width:3px;background:var(--g);border-radius:2px;animation:eq 1s infinite ease-in-out}
+.eq i:nth-child(2){animation-delay:.2s}.eq i:nth-child(3){animation-delay:.4s}.eq i:nth-child(4){animation-delay:.1s}
+@keyframes eq{0%,100%{height:3px}50%{height:14px}}
+h1{font-family:'Bebas Neue',sans-serif;font-weight:400;font-size:clamp(56px,9vw,128px);line-height:.9;letter-spacing:1px;margin:14px 0 10px}
+h1 span{color:var(--g)}
+.role{font-size:clamp(16px,1.7vw,21px);font-weight:700}
+.role .rot{color:var(--g);display:inline-block;min-width:10ch;border-right:2px solid var(--g);padding-right:4px;animation:blink 1s step-end infinite}
+@keyframes blink{50%{border-color:transparent}}
+.lead{color:#cfd4d6;max-width:620px;margin:18px 0 26px;font-size:15.5px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:14px 24px;font-weight:800;font-size:14px;transition:.25s}
+.btn.pri{background:var(--g);color:#0b0b0b}.btn.pri:hover{transform:scale(1.04);background:var(--g2)}
+.btn.sec{border:1px solid #555}.btn.sec:hover{border-color:#fff}
+.stats{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px}
+.stat b{font-family:'Bebas Neue';font-weight:400;font-size:44px;color:var(--g);line-height:1;display:block}
+.stat small{color:var(--mut);font-size:12px;font-weight:600}
+.artist{position:relative;justify-self:center;width:min(400px,100%)}
+.verified{position:absolute;top:18px;left:-14px;display:flex;align-items:center;gap:6px;background:#0b0b0b;border:1px solid #2a2a2a;border-radius:999px;padding:7px 14px 7px 9px;font-size:12.5px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.45);z-index:3;animation:bob 5s ease-in-out infinite}
+.verified svg{width:20px;height:20px}
+.listen{position:absolute;bottom:22px;right:-18px;display:flex;align-items:center;gap:12px;background:rgba(11,11,11,.88);backdrop-filter:blur(8px);border:1px solid #2a2a2a;border-radius:14px;padding:11px 16px;z-index:3;box-shadow:0 12px 30px rgba(0,0,0,.5);animation:bob 5s ease-in-out infinite reverse}
+.listen b{display:block;font-size:13.5px}.listen small{color:var(--mut);font-size:11.5px}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.portrait{position:relative;width:100%;aspect-ratio:.88;border-radius:28px;background:var(--g);overflow:hidden;box-shadow:0 30px 80px rgba(0,200,83,.25);transform:rotate(2deg);animation:float 6s ease-in-out infinite}
+.portrait img{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:96%}
+.portrait .vinyl{position:absolute;right:-70px;top:-70px;width:220px;height:220px;border-radius:50%;background:repeating-radial-gradient(#111 0 2px,#1d1d1d 2px 4px);animation:spin 9s linear infinite;opacity:.9}
+.portrait .vinyl::after{content:"";position:absolute;inset:40%;border-radius:50%;background:var(--g2)}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes float{50%{transform:rotate(2deg) translateY(-12px)}}
+
+.sh{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}
+h2{font-family:'Bebas Neue';font-weight:400;font-size:clamp(38px,4.5vw,58px);line-height:1;letter-spacing:.5px}
+h2 small{display:block;font-family:'Montserrat';font-size:13px;color:var(--mut);letter-spacing:.3px;margin-top:6px;font-weight:500}
+.count{color:var(--mut);font-size:13px;font-weight:600;white-space:nowrap}
+
+/* about */
+.about{display:grid;grid-template-columns:1.35fr 1fr;grid-template-areas:"intro exp" "why exp" "do kit";gap:20px;align-items:stretch}
+.ab-main,.ab-side{display:contents}
+.ab-main>.intro{grid-area:intro}.ab-main>.why{grid-area:why}.ab-main>.panel:last-child{grid-area:do}
+.ab-side>.panel:first-child{grid-area:exp}.ab-side>.panel:last-child{grid-area:kit}
+.ab-main>.panel:last-child,.ab-side>.panel{display:flex;flex-direction:column}
+.ab-main>.panel:last-child .svc{flex:1;grid-auto-rows:1fr}
+.ab-side>.panel:first-child .tl{flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.ab-side>.panel:last-child .facts{margin-top:auto}
+.why .wy{height:100%}
+.panel h4{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--mut);margin-bottom:16px;font-weight:700}
+.intro{background:linear-gradient(135deg,#123b22 0%,#181818 60%)}
+.intro .big{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,3.2vw,44px);line-height:1.05;color:#fff;margin-bottom:16px;letter-spacing:.3px}
+.intro .big span{color:var(--g)}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.wy{background:var(--card);border-radius:var(--r);padding:18px;transition:transform .25s,background .25s}
+.wy:hover{transform:translateY(-3px);background:#202020}
+.wi{width:40px;height:40px;border-radius:11px;background:rgba(0,200,83,.14);display:grid;place-items:center;margin-bottom:12px}
+.wi svg{width:21px;height:21px;fill:var(--g)}
+.wy b{display:block;font-size:14px;margin-bottom:4px}.wy small{color:var(--mut);font-size:12.5px;line-height:1.5;display:block}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.svc>div{background:#202020;border-radius:12px;padding:16px}
+.svc .apps{margin-bottom:10px;display:flex}
+.svc b{display:block;font-size:14px}.svc small{color:var(--mut);font-size:12.5px;display:block;margin-top:3px;line-height:1.5}
+.kit{margin-bottom:14px}.kit>small{display:block;color:var(--mut);font-size:11.5px;font-weight:600;margin-bottom:7px}
+.kit .skills{margin-top:0}
+.facts{display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:14px;margin-top:4px;font-size:13px}
+.facts b{display:block;color:var(--mut);font-size:11px;letter-spacing:1px;text-transform:uppercase}
+.panel{background:var(--card);border-radius:var(--r);padding:26px}
+.panel p{color:#d1d5d8;margin-bottom:12px}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.skills span{background:var(--card2);padding:7px 13px;border-radius:999px;font-size:12.5px;font-weight:600}
+.skills span.hi{background:var(--g);color:#0b0b0b}
+.tl{position:relative;padding-left:22px}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl .it{position:relative;margin-bottom:20px}
+.tl .it::before{content:"";position:absolute;left:-22px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--g)}
+.tl .it.now::before{background:var(--g);box-shadow:0 0 0 6px rgba(0,200,83,.18)}
+.tl b{display:block;font-size:15px}.tl em{font-style:normal;color:var(--g);font-weight:700;font-size:13px}.tl small{display:block;color:var(--mut);font-size:12.5px;margin-top:3px}
+
+/* clients */
+.clients{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:18px;width:100%}
+.cl{aspect-ratio:1;border-radius:50%;background:#1c1c1c;display:flex;align-items:center;justify-content:center;padding:20%;min-width:0;transition:background .3s,transform .3s,box-shadow .3s}
+.cl img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;opacity:.85;transition:opacity .3s}
+a.cl:hover{background:#262626;transform:translateY(-4px);box-shadow:0 0 0 2px var(--g),0 12px 30px rgba(0,200,83,.18)}
+a.cl:hover img{opacity:1}
+@media (max-width:560px){.clients{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}}
+
+/* playlists */
+.feat{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:auto auto;gap:18px}
+.fc{position:relative;border-radius:18px;overflow:hidden;background:#111;cursor:pointer;min-height:230px;text-align:left;display:block;width:100%}
+.fc:first-child{grid-row:span 2;min-height:480px}
+.fc .bgb{position:absolute;inset:-30px;background-size:cover;background-position:center;filter:blur(26px) brightness(.4);transform:scale(1.1)}
+.fc img{position:absolute;inset:16px 16px 92px;width:calc(100% - 32px);height:calc(100% - 108px);object-fit:contain;transition:transform .6s}
+.fc:hover img{transform:scale(1.04)}
+.fc .cap{position:absolute;left:0;right:0;bottom:0;padding:18px 76px 18px 20px;background:linear-gradient(transparent,rgba(0,0,0,.85) 40%)}
+.fc .cap span{font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--g)}
+.fc .cap b{display:block;font-size:18px;margin-top:2px}.fc:first-child .cap b{font-size:24px}
+.fc .cap small{color:#c9cdd0;font-size:12.5px}
+.fc .play{opacity:1;transform:none;right:18px;bottom:22px}
+@media (max-width:980px){.feat{grid-template-columns:1fr 1fr}.fc:first-child{grid-column:span 2;grid-row:auto;min-height:380px}}
+@media (max-width:560px){.feat{grid-template-columns:1fr}.fc:first-child{grid-column:auto}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tab{padding:7px 16px 7px 8px;border-radius:999px;background:var(--card2);font-weight:700;font-size:13px;transition:.2s;display:inline-flex;align-items:center;gap:8px}
+.tab[data-k=all]{padding-left:16px}
+.app{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;font-size:10px;font-weight:800;letter-spacing:-.2px;
+  background:#2a2a2a;color:#fff;box-shadow:0 0 0 2px var(--stk,#121212);flex:none;font-family:'Montserrat',sans-serif;
+  transition:margin .35s cubic-bezier(.2,.8,.2,1),background .25s,color .25s,transform .35s}
+.apps{display:inline-flex;align-items:center}
+.apps .app+.app{margin-left:-8px}
+.apps .app:nth-child(1){z-index:3}.apps .app:nth-child(2){z-index:2;opacity:.85}.apps .app:nth-child(3){z-index:1;opacity:.7}
+/* spread apart on hover / when active */
+a:hover .apps .app+.app,.tab:hover .apps .app+.app,.on .apps .app+.app,.svc>div:hover .apps .app+.app{margin-left:4px}
+a:hover .apps .app,.tab:hover .apps .app,.on .apps .app,.svc>div:hover .apps .app{opacity:1}
+a:hover .apps .app,.on .apps .app,.svc>div:hover .apps .app{background:var(--g);color:#0b0b0b}
+.apps.sm .app{width:20px;height:20px;font-size:8.5px;border-radius:6px}
+.tab .apps{--stk:var(--card2)}.tab.on .apps{--stk:#fff}
+.tab.on .apps .app{background:#0b0b0b;color:#fff}
+.nav a.li{gap:10px;padding:8px 8px;font-size:13px;white-space:nowrap}
+.nav a.li .apps{width:68px;--stk:#121212}
+.nav a.li .app{width:21px;height:21px;font-size:9px;border-radius:6px}
+.svc .apps{--stk:#202020}
+.tab:hover{background:#2f2f2f}.tab.on{background:#fff;color:#000}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px}
+.shelf{margin-bottom:34px}
+.shelf-h{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}
+.shelf-h h3{font-size:22px;font-weight:800;display:flex;align-items:center;gap:12px}
+.shelf-h .more{color:var(--mut);font-size:13px;font-weight:700;letter-spacing:.3px;transition:.2s}
+.shelf-h .more:hover{color:#fff;text-decoration:underline}
+.arrows{display:flex;gap:8px}
+.arrows button{width:34px;height:34px;border-radius:50%;background:#1f1f1f;font-size:18px;display:grid;place-items:center;transition:.2s}
+.arrows button:hover{background:var(--g);color:#0b0b0b}
+.row{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,320px);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 2px 14px;scrollbar-width:none}
+.row::-webkit-scrollbar{display:none}
+.row .card{scroll-snap-align:start}
+.card{background:var(--card);border-radius:16px;padding:12px 12px 16px;transition:background .3s,transform .3s,box-shadow .3s;cursor:pointer;position:relative;text-align:left;width:100%}
+.card:hover{background:#242424;transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.card .cv{position:relative;aspect-ratio:16/11;border-radius:11px;overflow:hidden;background:#111;margin-bottom:14px;display:grid;place-items:center}
+.card .cv .bgb{position:absolute;inset:-20px;background-size:cover;background-position:center;filter:blur(18px) brightness(.42);transform:scale(1.1)}
+.card .cv img{position:absolute;inset:0;margin:auto;max-width:90%;max-height:86%;width:auto;height:auto;object-fit:contain;border-radius:6px;box-shadow:0 10px 26px rgba(0,0,0,.55);transition:opacity .6s ease,transform .6s ease}
+.card .cv img.alt{opacity:0;transform:scale(.97)}
+.card:not(.hasv):hover .cv img.main{opacity:0;transform:scale(1.03)}
+.card:hover .cv img.alt{opacity:1;transform:scale(1.03)}
+.card .cv img.only{opacity:1}
+.card .cv video.hv{position:absolute;inset:0;margin:auto;max-width:90%;max-height:86%;width:auto;height:auto;border-radius:6px;opacity:0;transition:opacity .5s ease;box-shadow:0 10px 26px rgba(0,0,0,.55)}
+.card.vplay .cv video.hv{opacity:1}
+.card.vplay .cv img.main{opacity:0}
+.vtag{position:absolute;left:12px;bottom:12px;z-index:2;background:rgba(0,0,0,.72);font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;display:flex;align-items:center;gap:6px}
+.vtag i{width:0;height:0;border-left:7px solid var(--g);border-top:4.5px solid transparent;border-bottom:4.5px solid transparent}
+.stage video{max-width:100%;max-height:64vh;border-radius:6px}
+.card:hover .cv img.only{opacity:1;transform:scale(1.04)}
+.play{position:absolute;right:12px;bottom:12px;width:48px;height:48px;border-radius:50%;background:var(--g);display:grid;place-items:center;box-shadow:0 8px 18px rgba(0,0,0,.5);opacity:0;transform:translateY(10px);transition:.3s;z-index:2}
+.play svg{width:18px;height:18px;fill:#0b0b0b;margin-left:3px}
+.card:hover .play,.card:focus-visible .play{opacity:1;transform:none}
+.pg{position:absolute;left:12px;bottom:12px;z-index:2;background:rgba(0,0,0,.72);backdrop-filter:blur(4px);font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;display:flex;align-items:center;gap:5px}
+.pg svg{width:12px;height:12px;fill:currentColor;opacity:.8}
+.card b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card small{color:var(--mut);font-size:12.5px;display:block;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tagc{position:absolute;left:22px;top:22px;z-index:2;background:var(--g);color:#0b0b0b;font-size:10.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:4px 9px;border-radius:999px}
+
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.ct{background:var(--card);border-radius:var(--r);padding:20px;display:flex;gap:14px;align-items:center;transition:.25s}
+.ct:hover{background:#262626;transform:translateY(-3px)}
+.ct .ic{width:44px;height:44px;border-radius:12px;background:var(--g);display:grid;place-items:center;flex:none}
+.ct .ic svg{width:22px;height:22px;fill:#0b0b0b}
+.ct small{color:var(--mut);font-size:12px;display:block}.ct b{font-size:14px;word-break:break-all}
+
+footer{color:#777;font-size:12px;text-align:center;padding:20px}
+
+/* ---------- player bar ---------- */
+.bar{position:fixed;left:0;right:0;bottom:0;height:var(--barH);background:#000;border-top:1px solid #1d1d1d;display:grid;grid-template-columns:1fr 1.4fr 1fr;align-items:center;padding:0 18px;z-index:30;gap:16px}
+.np{display:flex;align-items:center;gap:12px;min-width:0}
+.np .art{width:48px;height:48px;border-radius:8px;background:var(--g);display:grid;place-items:center;flex:none;overflow:hidden}
+.np .art img{width:100%;height:100%;object-fit:cover}
+.np b{font-size:13.5px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.np small{color:var(--mut);font-size:12px}
+.ctrl{display:flex;flex-direction:column;align-items:center;gap:6px}
+.btns{display:flex;align-items:center;gap:22px}
+.btns button svg{width:18px;height:18px;fill:#b3b3b3;transition:.2s}
+.btns button:hover svg{fill:#fff}
+.btns .pp{width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.btns .pp svg{fill:#000;width:14px;height:14px}
+.prog{display:flex;align-items:center;gap:10px;width:100%;font-size:11px;color:var(--mut)}
+.track{flex:1;height:4px;border-radius:2px;background:#4d4d4d;overflow:hidden}
+.track i{display:block;height:100%;width:0;background:var(--g);border-radius:2px}
+.right{display:flex;justify-content:flex-end;gap:10px}
+.right a{font-size:12px;font-weight:700;border:1px solid #444;border-radius:999px;padding:7px 14px;transition:.2s}
+.right a:hover{border-color:var(--g);color:var(--g)}
+
+/* ---------- lightbox ---------- */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.88);backdrop-filter:blur(6px);z-index:50;display:none;align-items:center;justify-content:center;padding:24px}
+.lb.open{display:flex;animation:fade .25s}
+@keyframes fade{from{opacity:0}}
+.lb .box{background:#121212;border-radius:18px;max-width:1150px;width:100%;max-height:94vh;display:flex;flex-direction:column;padding:16px;gap:12px}
+.stage{position:relative;flex:1;min-height:0;display:grid;place-items:center;background:#0a0a0a;border-radius:12px;overflow:hidden;padding:10px}
+.stage img{max-width:100%;max-height:64vh;width:auto;height:auto;object-fit:contain;border-radius:6px;animation:fade .3s}
+.nav2{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.65);font-size:26px;line-height:1;display:grid;place-items:center;transition:.2s}
+.nav2:hover{background:var(--g);color:#0b0b0b}.nav2.l{left:12px}.nav2.r{right:12px}
+.cnt{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.7);font-size:12px;padding:4px 10px;border-radius:999px}
+.thumbs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.thumbs button{flex:none;height:62px;border-radius:6px;overflow:hidden;opacity:.5;border:2px solid transparent;transition:.2s}
+.thumbs button img{height:100%;width:auto}
+.thumbs button.on,.thumbs button:hover{opacity:1;border-color:var(--g)}
+.lb .meta{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:0 4px}
+.lb .meta b{font-size:18px;display:block}.lb .meta small{color:var(--mut)}
+.lb .x{position:fixed;top:18px;right:22px;width:42px;height:42px;border-radius:50%;background:#222;font-size:22px}
+
+/* ---------- reveal ---------- */
+.hin{animation:hin .9s cubic-bezier(.2,.8,.2,1) both}.hin.d2{animation-delay:.2s}
+@keyframes hin{from{opacity:0;transform:translateY(24px)}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  :root{--sideW:0px}
+  .side{inset:0 0 auto 0;width:auto;height:auto;flex-direction:row;align-items:center;padding:10px 12px;background:rgba(0,0,0,.92);backdrop-filter:blur(8px)}
+  .side .lib,.brand small{display:none}
+  .nav{flex-direction:row;overflow-x:auto;scrollbar-width:none;flex:1}
+  .nav a{padding:8px 10px;font-size:12.5px;white-space:nowrap}.nav a svg{display:none}
+  .cvbtn{padding:8px 14px;font-size:12px}
+  main{margin-left:0;padding-top:58px}
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:40px}
+  .artist{width:min(320px,82%);order:-1}.verified{left:-6px}.listen{right:-6px}
+  .about{grid-template-columns:1fr;grid-template-areas:"intro" "why" "exp" "do" "kit"}
+  .why{grid-template-columns:1fr}
+  .bar{grid-template-columns:1fr auto;--barH:64px}
+  .ctrl .prog{display:none}.right{display:none}
+}
+@media (max-width:560px){.svc{grid-template-columns:1fr}.brand b{display:none}.grid{grid-template-columns:1fr;gap:14px}.row{grid-auto-columns:78%}.arrows{display:none}.stats{gap:18px}.stat b{font-size:36px}}
+</style>
+</head>
+<body>
+
+<aside class="side" aria-label="Navigation">
+  <a class="brand" href="#home"><span class="logo">K</span><span><b>Kerollos Magdy</b><small>Presentation &amp; Multimedia Designer</small></span></a>
+  <nav class="nav">
+    <a href="#home" class="on"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 3 10v11h6v-6h6v6h6V10z"/></svg>Home</a>
+    <a href="#about"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 6v2h18v-2c0-3.5-4-6-9-6Z"/></svg>About</a>
+    <a href="#work"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Work</a>
+    <a href="#clients"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11a4 4 0 1 0-4-4 4 4 0 0 0 4 4ZM8 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3Zm8 2c-3 0-7 1.5-7 4.5V20h14v-2.5C23 14.5 19 13 16 13ZM8 13c-.4 0-.9 0-1.4.1A5.5 5.5 0 0 1 8 17.5V20H1v-2.2C1 15 5 13 8 13Z"/></svg>Clients</a>
+    <a href="#contact"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg>Contact</a>
+  </nav>
+  <div class="lib">
+    <h6>Your Library</h6>
+    <nav class="nav" id="libnav"></nav>
+  </div>
+  <a class="cvbtn" href="Kerollos-Magdy-CV-2026.pdf" download>Download CV</a>
+</aside>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hin">
+      <span class="eyebrow"><span class="eq"><i></i><i></i><i></i><i></i></span>Now playing</span>
+      <h1>Kerollos<br><span>Magdy</span></h1>
+      <div class="role">Senior <span class="rot" id="rot">Presentation</span> Designer · Licensed Pharmacist</div>
+      <p class="lead">I turn clinical data, guidelines and business content into clear presentations, detail aids, eLearning modules and campaign visuals for pharmaceutical companies across Saudi Arabia, the UAE and Egypt. Six years in medical communications, with generative AI built into my daily workflow.</p>
+      <div class="cta">
+        <a class="btn pri" href="#work"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4v16l13-8z"/></svg>Play my work</a>
+        <a class="btn sec" href="#contact">Get in touch</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-n="6" data-s="+">0</b><small>years in medcomms</small></div>
+        <div class="stat"><b data-n="300" data-s="+">0</b><small>presentations designed</small></div>
+        <div class="stat"><b data-n="40" data-s="+">0</b><small>SCORM modules</small></div>
+        <div class="stat"><b data-n="24">0</b><small>pharma brands</small></div>
+      </div>
+    </div>
+    <div class="artist hin d2">
+      <div class="portrait"><span class="vinyl"></span><img src="img/me.webp" alt="Kerollos Magdy"></div>
+      <div class="verified"><svg viewBox="0 0 24 24"><path d="M12 1.5 14.6 4l3.5-.4.9 3.4 3 1.9-1.3 3.3 1.3 3.3-3 1.9-.9 3.4-3.5-.4L12 22.5 9.4 20l-3.5.4-.9-3.4-3-1.9L3.3 12 2 8.7l3-1.9.9-3.4 3.5.4Z" fill="#00C853"/><path d="m10.6 15.6-3.3-3.3 1.4-1.4 1.9 1.9 4.6-4.6 1.4 1.4Z" fill="#0b0b0b"/></svg>Verified Designer</div>
+      <div class="listen"><span class="eq"><i></i><i></i><i></i><i></i></span><span><b>Licensed Pharmacist</b><small>24 pharma brands · KSA · UAE · Egypt</small></span></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="sh rv"><h2>About<small>Designer by craft, pharmacist by training</small></h2></div>
+    <div class="about">
+      <div class="ab-main">
+        <div class="panel intro rv">
+          <p class="big">I make complex medical content <span>clear, accurate</span> and easy to act on.</p>
+          <p>I’m a Senior Presentation &amp; Multimedia Designer and a licensed pharmacist with six years in medical communications. I design slide kits, proposals, detail aids, SCORM courses and campaign visuals for pharmaceutical companies across Saudi Arabia, the UAE and Egypt.</p>
+          <p>Teams work with me because I read the science, not just the slides. I build from clinical studies, guidelines and SmPCs, keep every number on-brand and on-reference, and turn around medical-review comments quickly.</p>
+        </div>
+
+        <div class="why">
+          <div class="wy rv"><span class="wi"><svg viewBox="0 0 24 24"><path d="M9 2v6.3L4.2 17A3.3 3.3 0 0 0 7.1 22h9.8a3.3 3.3 0 0 0 2.9-5L15 8.3V2h-2v6.8l1 1.7H10l1-1.7V2Zm-1.7 13h9.4l1.4 2.5a1.3 1.3 0 0 1-1.2 2H7.1a1.3 1.3 0 0 1-1.2-2Z"/></svg></span><b>Scientific fluency</b><small>Licensed pharmacist: I understand mechanisms, endpoints and data before I design them.</small></div>
+          <div class="wy rv" style="transition-delay:80ms"><span class="wi"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4Z"/></svg></span><b>Built for review</b><small>Brand guidelines, references, codes and medical-review rounds are part of my process.</small></div>
+          <div class="wy rv" style="transition-delay:160ms"><span class="wi"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6Z"/></svg></span><b>Fast with AI</b><small>Generative AI for 3D icons, packshots, renders and video, so high volume stays high quality.</small></div>
+        </div>
+
+        <div class="panel rv">
+          <h4>What I do</h4>
+          <div class="svc">
+            <div><span class="apps"><span class="app">P</span></span><b>Presentations</b><small>Medical slide kits, proposals, pitch decks, company profiles, data visualization</small></div>
+            <div><span class="apps"><span class="app">Ai</span><span class="app">Id</span></span><b>Detail aids &amp; print</b><small>Detail aids, e-detailers, dropcards, brochures, booklets, packaging adaptations</small></div>
+            <div><span class="apps"><span class="app">SL</span></span><b>eLearning</b><small>SCORM courses in Articulate Storyline: layouts, interactions, quizzes, voice-over</small></div>
+            <div><span class="apps"><span class="app">Ae</span><span class="app">AI</span></span><b>Motion &amp; AI visuals</b><small>Product animations, reels, logo reveals, AI video, 3D icon systems</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ab-side">
+        <div class="panel rv">
+          <h4>Experience</h4>
+          <div class="tl">
+            <div class="it now"><b>Senior Multimedia Designer</b><em>Anchor Global Medical Affairs</em><small>02/2026 – Present · Sole designer</small></div>
+            <div class="it now"><b>Senior Multimedia Designer (Part-time)</b><em>MedX</em><small>05/2026 – Present</small></div>
+            <div class="it"><b>Multimedia Designer</b><em>Marvel Medical Scientific Solutions</em><small>06/2021 – 01/2026 · freelance since 02/2026</small></div>
+            <div class="it"><b>Freelance Presentation &amp; Multimedia Designer</b><em>Agencies &amp; companies in KSA, UAE, Jordan, Egypt</em><small>01/2025 – Present</small></div>
+            <div class="it"><b>Bachelor of Pharmacy</b><em>Deraya University</em><small>2018 – 2023 · Licensed Pharmacist</small></div>
+          </div>
+        </div>
+        <div class="panel rv">
+          <h4>Toolkit</h4>
+          <div class="kit"><small>Presentation</small><div class="skills"><span>PowerPoint</span><span>Google Slides</span><span>Keynote</span></div></div>
+          <div class="kit"><small>Design &amp; print</small><div class="skills"><span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>Canva</span></div></div>
+          <div class="kit"><small>eLearning &amp; motion</small><div class="skills"><span>Storyline 360</span><span>After Effects</span><span>Premiere Pro</span></div></div>
+          <div class="kit"><small>Generative AI</small><div class="skills"><span>Nano Banana</span><span>Kling</span><span>Veo</span><span>Runway</span><span>ChatGPT</span><span>Claude</span></div></div>
+          <div class="facts"><span><b>Markets</b>KSA · UAE · Egypt · Jordan</span><span><b>Languages</b>Arabic · English</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured">
+    <div class="sh rv"><h2>Featured<small>A few projects I’m proud of. Click to open.</small></h2></div>
+    <div class="feat" id="feat"></div>
+  </section>
+
+  <section id="work">
+    <div class="sh rv"><h2>Playlists<small>Selected work, grouped like albums. Click any card to open it.</small></h2><span class="count" id="count"></span></div>
+    <div class="tabs rv" id="tabs" role="tablist"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="clients">
+    <div class="sh rv"><h2>Clients<small>Companies I’ve designed for</small></h2></div>
+    <div class="clients"><a class="cl rv" style="transition-delay:0ms" href="https://www.sajapharma.com" target="_blank" rel="noopener" title="SAJA website"><img src="img/logos/00.png" alt="SAJA" loading="lazy"></a><a class="cl rv" style="transition-delay:50ms" href="https://www.tabukpharmaceuticals.com" target="_blank" rel="noopener" title="Tabuk Pharmaceuticals website"><img src="img/logos/01.png" alt="Tabuk Pharmaceuticals" loading="lazy"></a><a class="cl rv" style="transition-delay:100ms" href="https://www.gsk.com" target="_blank" rel="noopener" title="GSK website"><img src="img/logos/02.png" alt="GSK" loading="lazy"></a><a class="cl rv" style="transition-delay:150ms" href="https://www.jamjoompharma.com" target="_blank" rel="noopener" title="Jamjoom Pharma website"><img src="img/logos/03.png" alt="Jamjoom Pharma" loading="lazy"></a><a class="cl rv" style="transition-delay:200ms" href="https://www.sudairpharma.com" target="_blank" rel="noopener" title="Sudair Pharma website"><img src="img/logos/04.png" alt="Sudair Pharma" loading="lazy"></a><a class="cl rv" style="transition-delay:250ms" href="https://www.spimaco.com.sa" target="_blank" rel="noopener" title="SPIMACO website"><img src="img/logos/05.png" alt="SPIMACO" loading="lazy"></a><a class="cl rv" style="transition-delay:0ms" href="https://www.orchidiapharma.com" target="_blank" rel="noopener" title="Orchidia website"><img src="img/logos/06.png" alt="Orchidia" loading="lazy"></a><a class="cl rv" style="transition-delay:50ms" href="https://www.leo-pharma.com" target="_blank" rel="noopener" title="LEO Pharma website"><img src="img/logos/07.png" alt="LEO Pharma" loading="lazy"></a><a class="cl rv" style="transition-delay:100ms" href="https://www.pharma.com.sa" target="_blank" rel="noopener" title="PPI"><img src="img/logos/08.png" alt="PPI" loading="lazy"></a><a class="cl rv" style="transition-delay:150ms" href="https://www.evapharma.com" target="_blank" rel="noopener" title="EVA Pharma website"><img src="img/logos/09.png" alt="EVA Pharma" loading="lazy"></a><a class="cl rv" style="transition-delay:200ms" href="https://www.eipico.com.eg" target="_blank" rel="noopener" title="EIPICO website"><img src="img/logos/10.png" alt="EIPICO" loading="lazy"></a><a class="cl rv" style="transition-delay:250ms" href="https://biomed-egy.net" target="_blank" rel="noopener" title="BioMed website"><img src="img/logos/11.png" alt="BioMed" loading="lazy"></a><a class="cl rv" style="transition-delay:0ms" href="https://aestheticpioneers.com" target="_blank" rel="noopener" title="Aesthetic Pioneers website"><img src="img/logos/12.png" alt="Aesthetic Pioneers" loading="lazy"></a><a class="cl rv" style="transition-delay:50ms" href="https://www.pharco.org" target="_blank" rel="noopener" title="Pharco website"><img src="img/logos/13.png" alt="Pharco" loading="lazy"></a><a class="cl rv" style="transition-delay:100ms" href="https://www.facebook.com/PescadoPharmaceuticals/" target="_blank" rel="noopener" title="Pescado"><img src="img/logos/14.png" alt="Pescado" loading="lazy"></a><a class="cl rv" style="transition-delay:150ms" href="https://www.acdimatrading.com" target="_blank" rel="noopener" title="AIT website"><img src="img/logos/15.png" alt="AIT" loading="lazy"></a><a class="cl rv" style="transition-delay:200ms" href="https://www.elixirpharma-eg.com" target="_blank" rel="noopener" title="Elixir Pharma website"><img src="img/logos/16.png" alt="Elixir Pharma" loading="lazy"></a><a class="cl rv" style="transition-delay:250ms" href="https://www.hikma.com" target="_blank" rel="noopener" title="Hikma website"><img src="img/logos/17.png" alt="Hikma" loading="lazy"></a><a class="cl rv" style="transition-delay:0ms" href="https://www.chemipharm.net" target="_blank" rel="noopener" title="Chemipharm website"><img src="img/logos/18.png" alt="Chemipharm" loading="lazy"></a><a class="cl rv" style="transition-delay:50ms" href="https://www.cigalah.com" target="_blank" rel="noopener" title="Cigalah website"><img src="img/logos/19.png" alt="Cigalah" loading="lazy"></a><a class="cl rv" style="transition-delay:100ms" href="https://www.linkedin.com/company/nerhadou-international" target="_blank" rel="noopener" title="Nerhadou"><img src="img/logos/20.png" alt="Nerhadou" loading="lazy"></a><a class="cl rv" style="transition-delay:150ms" href="https://www.ipsen.com" target="_blank" rel="noopener" title="Ipsen website"><img src="img/logos/21.png" alt="Ipsen" loading="lazy"></a><a class="cl rv" style="transition-delay:200ms" href="https://www.stada.com" target="_blank" rel="noopener" title="STADA website"><img src="img/logos/22.png" alt="STADA" loading="lazy"></a><a class="cl rv" style="transition-delay:250ms" href="https://www.linkedin.com/company/inspire-pharma" target="_blank" rel="noopener" title="Inspire Pharma"><img src="img/logos/23.png" alt="Inspire Pharma" loading="lazy"></a></div>
+  </section>
+
+  <section id="contact">
+    <div class="sh rv"><h2>Let’s talk<small>Open to full-time remote roles, freelance projects and relocation</small></h2></div>
+    <div class="contact">
+      <a class="ct rv" href="mailto:kerollosmagdymegalaa@gmail.com"><span class="ic"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5Z"/></svg></span><span><small>Email</small><b>kerollosmagdymegalaa@gmail.com</b></span></a>
+      <a class="ct rv" href="https://wa.me/201208901062" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.7-.1 1.3Z"/></svg></span><span><small>WhatsApp</small><b>+20 120 890 1062</b></span></a>
+      <a class="ct rv" href="https://www.linkedin.com/in/kerollos-magdy-megalaa/" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3zm7 0h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4z"/></svg></span><span><small>LinkedIn</small><b>kerollos-magdy-megalaa</b></span></a>
+      <a class="ct rv" href="https://www.behance.net/kerollosmagdy1" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24"><path d="M8.2 11.3c.8-.4 1.3-1.1 1.3-2.2C9.5 7 7.9 6 5.9 6H1v12h5.1c2.2 0 4.2-1 4.2-3.5 0-1.5-.8-2.7-2.1-3.2ZM3.3 8h2.2c.8 0 1.6.2 1.6 1.2 0 .9-.6 1.2-1.4 1.2H3.3Zm2.5 8H3.3v-3.4h2.6c1 0 1.7.4 1.7 1.6S6.8 16 5.8 16ZM16.6 9c-2.8 0-4.6 2-4.6 4.6 0 2.8 1.7 4.6 4.6 4.6 2.1 0 3.5-1 4.2-3h-2.2c-.3.8-1.1 1.2-2 1.2-1.4 0-2.2-.8-2.2-2.2h6.5c.2-2.9-1.3-5.2-4.3-5.2Zm-2.2 3.6c.1-1.2.9-1.9 2.1-1.9s1.9.7 2 1.9ZM14.5 6.8h5v1.3h-5z"/></svg></span><span><small>Behance</small><b>kerollosmagdy1</b></span></a>
+    </div>
+  </section>
+  <footer>© <span id="yr"></span> Kerollos Magdy Megalaa · Designed &amp; built in the Spotify spirit</footer>
+</main>
+
+<div class="bar" role="region" aria-label="Now viewing">
+  <div class="np"><span class="art"><img src="img/me.webp" alt=""></span><span><b id="npT">Home</b><small>Kerollos Magdy</small></span></div>
+  <div class="ctrl">
+    <div class="btns">
+      <button id="prev" aria-label="Previous section"><svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg></button>
+      <a class="pp" href="#work" aria-label="Play my work"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg></a>
+      <button id="next" aria-label="Next section"><svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6zm10-12h2v12h-2z"/></svg></button>
+    </div>
+    <div class="prog"><span id="cur">0:00</span><span class="track"><i id="trk"></i></span><span>5:00</span></div>
+  </div>
+  <div class="right"><a href="Kerollos-Magdy-CV-2026.pdf" download>CV</a><a href="#contact">Contact</a></div>
+</div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Project preview">
+  <button class="x" id="lbx" aria-label="Close">×</button>
+  <div class="box"><div class="meta"><span><b id="lbT"></b><small id="lbS"></small></span><a class="btn pri" id="lbA" target="_blank" rel="noopener">View full project ↗</a></div><div class="stage"><video id="lbVid" muted loop playsinline controls style="display:none"></video><img id="lbImg" alt=""><button class="nav2 l" id="gp" aria-label="Previous image">‹</button><button class="nav2 r" id="gn" aria-label="Next image">›</button><span class="cnt" id="gc"></span></div><div class="thumbs" id="th"></div></div>
+</div>
+
+<script>
+const APPS={pp:['P','#C43E1C','#fff','PowerPoint'],sl:['SL','#F25E22','#fff','Articulate Storyline'],ac:['Ac','#B30B00','#fff','Acrobat'],
+  ae:['Ae','#00005B','#9999FF','After Effects'],pr:['Pr','#00005B','#9999FF','Premiere Pro'],ps:['Ps','#001E36','#31A8FF','Photoshop'],
+  ai:['Ai','#330000','#FF9A00','Illustrator'],id:['Id','#49021F','#FF3366','InDesign'],gen:['AI','#0b3d1f','#00C853','Generative AI']};
+const CATAPPS={deck:['pp','ps'],scorm:['sl','pp'],edet:['pp','ac'],motion:['ae','pr','gen'],social:['ps','ai'],print:['ai','ps','id']};
+const badge=k=>{const a=APPS[k];return `<span class="app" title="${a[3]}">${a[0]}</span>`};
+const CATS={deck:'Presentations',scorm:'eLearning (SCORM)',edet:'E-detailers',motion:'Motion & Video',social:'Social Media',print:'Print'};
+const W=[
+ ['deck',9,'PMO Operating Guide (Arabic)','Saudi government entity · via Experts Unit','https://docs.google.com/presentation/d/1JqFLAzakYEijhuBaFLgNfDla_n73OhxN/edit?usp=sharing'],
+ ['deck',10,'Experts Unit Company Profile','Consulting company · Arabic & English','https://docs.google.com/presentation/d/17Si-W1vdSeMotyKEUFMQRhf3hrOm-GnF/edit?usp=sharing'],
+ ['deck',14,'Tabuk Pharmaceuticals Proposal','Business proposal deck · KSA','https://docs.google.com/presentation/d/1Y_bAeVbWfTdVu8iS75eDZzNg2TNkJyVD/edit?usp=sharing'],
+ ['deck',11,'Nevilob (Valsartan) Slide Kit','Cardiology medical slide kit','https://docs.google.com/presentation/d/1lEVA_vdhxI6XWw9ZGQgfdhPjIWOa2uAT/edit?usp=sharing'],
+ ['deck',12,'Pomalidomide','Oncology medical presentation','https://docs.google.com/presentation/d/1cJ3qiCjc4_ZzCw9hFL1UaOpaXKMSb_yi/edit?usp=sharing'],
+ ['deck',13,'Medico-Legal Services Proposal','Healthcare proposal deck · KSA','https://docs.google.com/presentation/d/1R8HHkFq_qFWpbkCYSkByZOrUmmrJ_J7E/edit?usp=sharing'],
+ ['deck',15,'Executive Deck','Consulting-style concept deck','https://docs.google.com/presentation/d/1LG3LetjiHGl0soCVqOB4PYsQTQCPJgB8/edit?usp=sharing','Concept'],
+ ['scorm',17,'Diamon™','Jamjoom Pharma · SCORM course','https://scorm.marvelwall.com/Jamjoom/diamon/Diamon%e2%84%a2/'],
+ ['scorm',18,'Interventional Pain Management','Tebzone · CME module','https://scorm.marvelwall.com/tebzone/pain_management/module5_interventional_pain_management_techniques/'],
+ ['scorm',19,'Hepavir','SPIMACO · eLearning module','https://scorm.marvelwall.com/spimaco/hepavir/sample/1/'],
+ ['scorm',20,'Prima D3™','Jamjoom Pharma · Vitamin D module','https://scorm.marvelwall.com/Jamjoom/pain_management/module3_vitamin_d_deficiency/'],
+ ['scorm',21,'Diabetes Mellitus','Jamjoom Pharma · eLearning module','https://scorm.marvelwall.com/Jamjoom/dapazin/module1_diabetes/'],
+ ['edet',23,'Theraset E-detailer','Aesthetic Pioneers · interactive','https://drive.google.com/file/d/18XydNOFBD8d0EaAnVDmvPOeq2NhA3qE3/view?usp=sharing'],
+ ['edet',24,'Sugmadon E-detailer','Interactive detail aid','https://drive.google.com/file/d/1QTLssLUAUMcoNVH3b8u7Sm6TT0bD8Pqs/view?usp=sharing'],
+ ['edet',25,'Tofanta E-detailer','Interactive detail aid','https://drive.google.com/file/d/1Wveot40SFTbzlHzvEwx4LZsBR1M4F12d/view?usp=sharing'],
+ ['motion',27,'Ezipan Concept Animation','Tabuk Pharmaceuticals','https://drive.google.com/file/d/13QadoAgCCRnVoRADi74l5OBLBShLTRvR/view?usp=sharing'],
+ ['motion',28,'Artiz Concept Animation','Tabuk Pharmaceuticals','https://drive.google.com/file/d/1yBptRCTDjwHVGRaRDhISNALkx3-Q58k8/view?usp=sharing'],
+ ['motion',29,'Prof Cold & Flu Animation','Tabuk Pharmaceuticals','https://drive.google.com/file/d/1SANwlvrqNSzI2hpuQD3rDzYQOTLIM377/view?usp=sharing'],
+ ['motion',30,'Spektrum Women','STADA · product video','https://drive.google.com/file/d/1DMnxWIKLqmYMSt4fzF9Kl86BWtgMd-4J/view?usp=sharing'],
+ ['motion',31,'Sehetakbekhair Reels','Jamjoom Pharma · social video','https://www.instagram.com/reels/DGnxaxOMb7X/'],
+ ['motion',32,'Omega AIT Reels','AIT · social video','https://www.instagram.com/reel/DL4yPm2qJGr/'],
+ ['motion',33,'Roxonin Reels','SAJA · campaign video','https://www.instagram.com/reels/CfZ5cYOIDSG/'],
+ ['social',35,'Sehetakbekhair Campaign','Health-awareness social campaign','https://www.instagram.com/sehetakbekhair'],
+ ['print',37,'Pixar Dropcard','SPC · apixaban','https://drive.google.com/file/d/1cR93aIu2Q2TfoDZ2fM6hhqkL6GAlNguM/view?usp=sharing'],
+ ['print',41,'Xadago Dropcard','Zambon · Parkinson’s','https://drive.google.com/file/d/1uRFuSXE0mjTLyTq1LzboIpd-P1D49JWY/view?usp=sharing'],
+ ['print',38,'Ketolac Dropcard','Pharco · dental pain','https://drive.google.com/file/d/1H5YKYDmC0ahmzdX68E2i4Lmhe-jlUp9V/view?usp=sharing'],
+ ['print',39,'Surlex Dropcard','Detail card','https://drive.google.com/file/d/12PinNEjCDsWHEuhPElBdEl6z-R8Ke6WT/view?usp=sharing'],
+ ['print',40,'Spektrum Women Dropcard','STADA · AR & EN','https://drive.google.com/file/d/1JeUGb6OLERk7kCcX3TYkeeoWCQ-6uHnf/view?usp=sharing'],
+ ['print',42,'HS Brochure','Aesthetic product brochure','https://drive.google.com/file/d/1DrKcuph8iK9xGIDY2TSqIKmuhmHiJvVI/view?usp=sharing'],
+ ['print',43,'The Royal Collagen Boost','Aesthetics dropcard','https://drive.google.com/file/d/1G3ZHyTUTj4nQoLz2EeIGapqmUUeoNvml/view?usp=sharing'],
+ ['print',44,'Sugmadon Dropcard','Detail card','https://drive.google.com/file/d/12qks1zoVr2YPi92oxCKQ9tYfTQ3iWGKW/view?usp=sharing'],
+ ['print',45,'Tofanta Dropcard','Detail card','https://drive.google.com/file/d/1_dgHMz7HnJ0edzxlPHRe8udcCSSkFxxX/view?usp=sharing'],
+ ['print',46,'Cresemba Flyer','Antifungal · medical flyer','https://drive.google.com/file/d/1Fp4CLWcGCpwFqvCCO5XrGHkXZ3LueLR6/view?usp=sharing'],
+ ['print',47,'Menorrhagia Flyer','Women’s health flyer','https://drive.google.com/file/d/1-0AsvyAF68mDA1XwX_aykPrtaA_xPcoX/view?usp=sharing'],
+];
+const PICS={"9": ["p/9_0.webp", "p/9_1.webp", "p/9_2.webp", "p/9_3.webp", "p/9_4.webp", "p/9_5.webp", "p/9_6.webp", "p/9_7.webp", "p/9_8.webp"], "10": ["p/10_0.webp", "p/10_1.webp", "p/10_2.webp", "p/10_3.webp", "p/10_4.webp", "p/10_5.webp", "p/10_6.webp", "p/10_7.webp", "p/10_8.webp"], "11": ["p/11_0.webp", "p/11_1.webp", "p/11_2.webp", "p/11_3.webp", "p/11_4.webp", "p/11_5.webp", "p/11_6.webp", "p/11_7.webp", "p/11_8.webp"], "12": ["p/12_0.webp", "p/12_1.webp", "p/12_2.webp", "p/12_3.webp", "p/12_4.webp", "p/12_5.webp", "p/12_6.webp", "p/12_7.webp", "p/12_8.webp"], "13": ["p/13_0.webp", "p/13_1.webp", "p/13_2.webp", "p/13_3.webp", "p/13_4.webp", "p/13_5.webp", "p/13_6.webp", "p/13_7.webp", "p/13_8.webp"], "14": ["p/14_0.webp", "p/14_1.webp", "p/14_2.webp", "p/14_3.webp", "p/14_4.webp", "p/14_5.webp", "p/14_6.webp", "p/14_7.webp", "p/14_8.webp"], "15": ["p/15_0.webp", "p/15_1.webp", "p/15_2.webp", "p/15_3.webp", "p/15_4.webp", "p/15_5.webp", "p/15_6.webp", "p/15_7.webp", "p/15_8.webp"], "17": ["p/17_0.webp", "p/17_1.webp", "p/17_2.webp", "p/17_3.webp", "p/17_4.webp", "p/17_5.webp", "p/17_6.webp", "p/17_7.webp", "p/17_8.webp"], "18": ["p/18_0.webp", "p/18_1.webp", "p/18_2.webp", "p/18_3.webp", "p/18_4.webp", "p/18_5.webp", "p/18_6.webp", "p/18_7.webp", "p/18_8.webp"], "19": ["p/19_0.webp", "p/19_1.webp", "p/19_2.webp", "p/19_3.webp", "p/19_4.webp", "p/19_5.webp", "p/19_6.webp", "p/19_7.webp", "p/19_8.webp"], "20": ["p/20_0.webp", "p/20_1.webp", "p/20_2.webp", "p/20_3.webp", "p/20_4.webp", "p/20_5.webp", "p/20_6.webp", "p/20_7.webp", "p/20_8.webp"], "21": ["p/21_0.webp", "p/21_1.webp", "p/21_2.webp", "p/21_3.webp", "p/21_4.webp", "p/21_5.webp", "p/21_6.webp", "p/21_7.webp", "p/21_8.webp"], "23": ["p/23_0.webp", "p/23_1.webp", "p/23_2.webp", "p/23_3.webp", "p/23_4.webp", "p/23_5.webp", "p/23_6.webp", "p/23_7.webp", "p/23_8.webp"], "24": ["p/24_0.webp", "p/24_1.webp", "p/24_2.webp", "p/24_3.webp", "p/24_4.webp", "p/24_5.webp", "p/24_6.webp", "p/24_7.webp", "p/24_8.webp"], "25": ["p/25_0.webp", "p/25_1.webp", "p/25_2.webp", "p/25_3.webp", "p/25_4.webp", "p/25_5.webp", "p/25_6.webp", "p/25_7.webp", "p/25_8.webp"], "27": ["p/27_0.webp"], "28": ["p/28_0.webp"], "29": ["p/29_0.webp"], "30": ["p/30_0.webp"], "31": ["p/31_0.webp", "p/31_1.webp", "p/31_2.webp"], "32": ["p/32_0.webp", "p/32_1.webp", "p/32_2.webp"], "33": ["p/33_0.webp", "p/33_1.webp", "p/33_2.webp"], "35": ["w35.webp"], "37": ["p/37_0.webp", "p/37_1.webp", "p/37_2.webp"], "38": ["p/38_0.webp", "p/38_1.webp"], "39": ["p/39_0.webp", "p/39_1.webp", "p/39_2.webp"], "40": ["p/40_0.webp", "p/40_1.webp"], "41": ["p/41_0.webp", "p/41_1.webp", "p/41_2.webp"], "42": ["p/42_0.webp", "p/42_1.webp", "p/42_2.webp", "p/42_3.webp", "p/42_4.webp", "p/42_5.webp"], "43": ["p/43_cover.webp", "p/43_0.webp", "p/43_1.webp", "p/43_2.webp", "p/43_3.webp"], "44": ["p/44_0.webp", "p/44_1.webp"], "45": ["p/45_0.webp", "p/45_1.webp"], "46": ["p/46_cover.webp", "p/46_0.webp", "p/46_1.webp"], "47": ["p/47_cover.webp", "p/47_0.webp", "p/47_1.webp"]};
+const $=s=>document.querySelector(s), grid=$('#grid'), tabs=$('#tabs');
+let cur='all';
+const VIDS={27:'vid/27sq.mp4',28:'vid/28sq.mp4',29:'vid/29sq.mp4',30:'vid/30.mp4',31:'vid/31.mp4',33:'vid/33.mp4'};
+const ICON_PG='<svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6zm8 1.5V8h4.5z"/></svg>';
+function cardHTML(w,i){const p=PICS[w[1]],two=p.length>1&&!VIDS[w[1]];
+  return `<button class="card rv${VIDS[w[1]]?' hasv':''}" data-i="${W.indexOf(w)}" style="transition-delay:${Math.min(i,6)*60}ms">
+    <span class="cv"><span class="bgb" style="background-image:url(img/${p[0]})"></span>
+      <img class="${two||VIDS[w[1]]?'main':'only'}" src="img/${p[0]}" alt="${w[2]}" loading="lazy">${VIDS[w[1]]?`<video class="hv" data-src="${VIDS[w[1]]}" muted loop playsinline preload="none"></video><span class="vtag"><i></i>Video</span>`:(two?`<img class="alt" src="img/${p[1]}" alt="" loading="lazy">`:'')}
+      ${p.length>1?`<span class="pg">${ICON_PG}${p.length} pages</span>`:''}
+      <span class="play"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg></span></span>
+    ${w[5]?`<span class="tagc">${w[5]}</span>`:''}<b>${w[2]}</b><small>${w[3]}</small></button>`;}
+function render(){
+  if(cur==='all'){
+    grid.className='shelves';
+    grid.innerHTML=Object.entries(CATS).map(([k,v])=>{const list=W.filter(w=>w[0]===k);
+      return `<div class="shelf"><div class="shelf-h"><h3><span class="apps">${CATAPPS[k].map(badge).join('')}</span>${v}</h3>
+        <span class="arrows"><button data-d="-1" aria-label="Scroll left">‹</button><button data-d="1" aria-label="Scroll right">›</button>
+        <a href="#work" class="more" data-k="${k}">Show all (${list.length})</a></span></div>
+        <div class="row">${list.map(cardHTML).join('')}</div></div>`}).join('');
+  } else {
+    grid.className='grid';
+    grid.innerHTML=W.filter(w=>w[0]===cur).map(cardHTML).join('');
+  }
+  $('#count').textContent=(cur==='all'?W.length:W.filter(w=>w[0]===cur).length)+' projects';
+  grid.querySelectorAll('.rv').forEach(e=>io.observe(e));
+}
+grid.addEventListener('mouseover',e=>{const c=e.target.closest('.card.hasv');if(!c||c.classList.contains('vplay'))return;const v=c.querySelector('video');if(!v.src)v.src=v.dataset.src;v.currentTime=0;v.play().then(()=>c.classList.add('vplay')).catch(()=>{});});
+grid.addEventListener('mouseout',e=>{const c=e.target.closest('.card.hasv');if(!c||c.contains(e.relatedTarget))return;const v=c.querySelector('video');v.pause();c.classList.remove('vplay');});
+grid.addEventListener('click',e=>{const m=e.target.closest('.more');if(m){e.preventDefault();pick(m.dataset.k);document.getElementById('work').scrollIntoView({behavior:'smooth'});return}
+  const ar=e.target.closest('.arrows button');if(ar){const r=ar.closest('.shelf').querySelector('.row');r.scrollBy({left:+ar.dataset.d*r.clientWidth*.85,behavior:'smooth'});}});
+const tabList=[['all','All']].concat(Object.entries(CATS));
+tabs.innerHTML=tabList.map(([k,v])=>`<button class="tab${k==='all'?' on':''}" role="tab" data-k="${k}">${k==='all'?'':`<span class="apps sm">${CATAPPS[k].map(badge).join('')}</span>`}${v}</button>`).join('');
+$('#libnav').innerHTML=Object.entries(CATS).map(([k,v])=>`<a href="#work" data-k="${k}" class="li"><span class="apps">${CATAPPS[k].map(badge).join('')}</span><span>${v}</span></a>`).join('');
+function pick(k){cur=k;tabs.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.k===k));$('#libnav').querySelectorAll('a').forEach(a=>a.classList.toggle('on',a.dataset.k===k));render();}
+tabs.addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)pick(t.dataset.k)});
+$('#libnav').addEventListener('click',e=>{const a=e.target.closest('a');if(a)pick(a.dataset.k)});
+// lightbox
+const lb=$('#lb');
+let G=[],gi=0;
+function show(i){gi=(i+G.length)%G.length;const im=$('#lbImg'),vv=$('#lbVid');const isV=G[gi].startsWith('vid/');vv.style.display=isV?'':'none';im.style.display=isV?'none':'';if(isV){vv.src=G[gi];vv.play().catch(()=>{})}else{vv.pause();im.src='img/'+G[gi];}im.style.animation='none';im.offsetHeight;im.style.animation='';
+  $('#gc').textContent=(gi+1)+' / '+G.length;$('#th').querySelectorAll('button').forEach((b,k)=>b.classList.toggle('on',k===gi));
+  const one=G.length<2;['#gp','#gn','#gc'].forEach(q=>$(q).style.display=one?'none':'');$('#th').style.display=one?'none':'';
+  const b=$('#th').children[gi];if(b)b.scrollIntoView({block:'nearest',inline:'center'});}
+function openW(i){const w=W[i];G=(VIDS[w[1]]?[VIDS[w[1]]]:[]).concat(PICS[w[1]]);
+  $('#lbImg').alt=w[2];$('#lbT').textContent=w[2];$('#lbS').textContent=w[3];$('#lbA').href=w[4];
+  $('#th').innerHTML=G.map((g,k)=>g.startsWith('vid/')?`<button aria-label="Video"><img src="img/${PICS[w[1]][0]}" alt="" loading="lazy"></button>`:`<button aria-label="Image ${k+1}"><img src="img/${g}" alt="" loading="lazy"></button>`).join('');
+  lb.classList.add('open');show(0);$('#lbx').focus();$('#npT').textContent=w[2];document.querySelector('.np .art img').src='img/'+PICS[w[1]][0];}
+grid.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openW(+c.dataset.i)});
+$('#th').addEventListener('click',e=>{const b=e.target.closest('button');if(b)show([...$('#th').children].indexOf(b))});
+$('#gp').onclick=()=>show(gi-1);$('#gn').onclick=()=>show(gi+1);
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='ArrowRight')show(gi+1);if(e.key==='ArrowLeft')show(gi-1)});
+function closeLb(){lb.classList.remove('open');$('#lbVid').pause()}
+$('#lbx').onclick=closeLb;lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});addEventListener('keydown',e=>{if(e.key==='Escape')closeLb()});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+addEventListener('load',()=>setTimeout(()=>document.querySelectorAll('.rv').forEach(e=>{const r=e.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)e.classList.add('in')}),300));
+render();
+const FEAT=[14,17,27,23,11];
+$('#feat').innerHTML=FEAT.map(n=>{const i=W.findIndex(w=>w[1]===n),w=W[i];return `<button class="fc rv" data-i="${i}"><span class="bgb" style="background-image:url(img/${PICS[n][0]})"></span><img src="img/${PICS[n][0]}" alt="${w[2]}" loading="lazy"><span class="cap"><span>${CATS[w[0]]}</span><b>${w[2]}</b><small>${w[3]}</small></span><span class="play"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg></span></button>`}).join('');
+$('#feat').querySelectorAll('.rv').forEach(e=>io.observe(e));
+$('#feat').addEventListener('click',e=>{const c=e.target.closest('.fc');if(c)openW(+c.dataset.i)});
+// counters
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const b=e.target,n=+b.dataset.n,p=b.dataset.p||'',s=b.dataset.s||'';let t0;
+  const step=t=>{t0??=t;const k=Math.min((t-t0)/1200,1);b.textContent=p+Math.round(n*(1-Math.pow(1-k,3)))+s;if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step);so.unobserve(b)}),{threshold:.6});
+document.querySelectorAll('.stat b').forEach(b=>so.observe(b));
+// rotating role
+const roles=['Presentation','Multimedia','eLearning','Medical'];let ri=0;
+setInterval(()=>{ri=(ri+1)%roles.length;$('#rot').textContent=roles[ri]},2200);
+// scroll progress + active nav + now playing
+const secs=['home','about','featured','work','clients','contact'].map(id=>document.getElementById(id));
+const names={home:'Home',about:'About',featured:'Featured',work:'Playlists',clients:'Clients',contact:'Let’s talk'};
+function onScroll(){const h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+  $('#trk').style.width=(p*100)+'%';const s=Math.round(p*300);$('#cur').textContent=Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
+  let a=secs[0];secs.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.4)a=s});
+  document.querySelectorAll('.side>.nav a').forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+a.id));
+  if(!lb.classList.contains('open'))$('#npT').textContent=names[a.id];}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+function jump(d){const y=scrollY+innerHeight*.4;let i=secs.findIndex(s=>s.offsetTop>y)-1;if(i<0)i=secs.length-1;const t=secs[Math.max(0,Math.min(secs.length-1,i+d))];t.scrollIntoView({behavior:'smooth'})}
+$('#prev').onclick=()=>jump(-1);$('#next').onclick=()=>jump(1);
+$('#yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
